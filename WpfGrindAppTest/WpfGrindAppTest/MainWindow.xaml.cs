@@ -44,5 +44,11 @@ namespace WpfGrindAppTest
         {
             MessageBox.Show("Type your Name in the TextBox");
         }
+
+        private void txtTexto_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtTexto.Text = string.Empty;
+            tbResultadoText.Text = string.Empty;
+        }
     }
 }
