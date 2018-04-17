@@ -21,12 +21,14 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="4" Margin="20">
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="4" Margin="20">
+            <Rectangle Height="50" Width="20" Fill="Gray"/>
             <TextBlock Text="The grinding house" FontSize="24" Foreground="White" Background="DarkBlue" Padding="10"/>
+            <Rectangle Height="50" Width="20" Fill="Gray"/>
         </StackPanel>
       
         <TextBlock Text="Type your name: " Grid.Row="1" Grid.Column="1"/>
-        <TextBox x:Name="txtTexto" Grid.Row="1" Grid.Column="2" Width="80"/>
+        <TextBox x:Name="txtTexto" Grid.Row="1" Grid.Column="2" Width="80" GotFocus="txtTexto_GotFocus"/>
 
         <TextBlock x:Name="tbResultadoText" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"/>
 
