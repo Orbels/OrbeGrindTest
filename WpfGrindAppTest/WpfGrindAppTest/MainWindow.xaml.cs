@@ -39,5 +39,10 @@ namespace WpfGrindAppTest
                 tbResultadoText.Text = "You must enter any text";
             }
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Type your Name in the TextBox");
+        }
     }
 }
