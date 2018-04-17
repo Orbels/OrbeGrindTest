@@ -38,6 +38,7 @@ namespace WpfGrindAppTest
                 tbResultadoText.Foreground = Brushes.Red;
                 tbResultadoText.Text = "You must enter any text";
             }
+            MessageBox.Show("Hello");
         }
     }
 }
