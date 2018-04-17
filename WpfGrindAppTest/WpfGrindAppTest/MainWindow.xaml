@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfGrindAppTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+        Title="WpfGrindAppTest" Height="350" Width="525" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -21,6 +21,10 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="4" Margin="20">
+            <TextBlock Text="The grinding house" FontSize="24" Foreground="White" Background="DarkBlue" Padding="10"/>
+        </StackPanel>
+      
         <TextBlock Text="Type your name: " Grid.Row="1" Grid.Column="1"/>
         <TextBox x:Name="txtTexto" Grid.Row="1" Grid.Column="2" Width="80"/>
 
