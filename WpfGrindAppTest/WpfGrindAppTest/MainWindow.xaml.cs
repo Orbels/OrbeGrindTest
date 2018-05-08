@@ -35,7 +35,7 @@ namespace WpfGrindAppTest
             }
             else
             {
-                tbResultadoText.Foreground = Brushes.Red;
+                tbResultadoText.Foreground = Brushes.DarkRed;
                 tbResultadoText.Text = "You must enter any text";
             }
         }
