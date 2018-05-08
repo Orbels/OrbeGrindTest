@@ -31,7 +31,8 @@ namespace WpfGrindAppTest
             if (txtTexto.Text!=String.Empty)
             {
                 tbResultadoText.Foreground = Brushes.DarkGreen;
-                tbResultadoText.Text = txtTexto.Text;
+                string reverse=Reverse(txtTexto.Text);
+                tbResultadoText.Text = reverse;
             }
             else
             {
@@ -49,6 +50,13 @@ namespace WpfGrindAppTest
         {
             txtTexto.Text = string.Empty;
             tbResultadoText.Text = string.Empty;
+        }
+
+        public static string Reverse(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
     }
 }
