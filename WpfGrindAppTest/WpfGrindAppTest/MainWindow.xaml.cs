@@ -30,7 +30,7 @@ namespace WpfGrindAppTest
             tbResultadoText.Text = string.Empty;
             if (txtTexto.Text!=String.Empty)
             {
-                tbResultadoText.Foreground = Brushes.Black;
+                tbResultadoText.Foreground = Brushes.DarkGreen;
                 tbResultadoText.Text = txtTexto.Text;
             }
             else
